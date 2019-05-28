@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Insert title here</title>
+</head>
+<h:body>
+
+	<h:outputText value="#{clienteBean.titulo}"></h:outputText>
+	<br></br>
+	<h:outputText value="#{clienteBean.colaborador.nome}"></h:outputText>
+	<br></br>
+	<h:form>
+		<p:commandButton value="Salvar" actionListener="#{clienteBean.save}" styleClass="btn btn-primary btn-sm btn-block" />
+	</h:form>
+
+</h:body>
+</html>
