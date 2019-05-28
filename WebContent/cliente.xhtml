@@ -9,13 +9,24 @@
 <title>Insert title here</title>
 </head>
 <h:body>
-
+<h:head>
+	
+	<h:outputStylesheet library="css" name="default.css"/>
+	
+</h:head>
+	<p:panel id="panel-login-principal" 
+		    		 header="Login" 
+		    		 footer="Sistema de cadastro de pessoas" 
+		    		 style="width:400px;">
+	        	
+	        	
+   	</p:panel>
 	<h:outputText value="#{clienteBean.titulo}"></h:outputText>
 	<br></br>
 	<h:outputText value="#{clienteBean.colaborador.nome}"></h:outputText>
 	<br></br>
 	<h:form>
-		<p:commandButton value="Salvar" actionListener="#{clienteBean.save}" styleClass="btn btn-primary btn-sm btn-block" />
+		<p:commandButton icon="ui-icon-extlink" value="Salvar" actionListener="#{clienteBean.save}" styleClass="btn btn-primary btn-sm btn-block" />
 	</h:form>
 
 </h:body>
